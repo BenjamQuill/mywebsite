@@ -4,20 +4,20 @@
         "title": "Okanban",
         "resum": "Gestionnaire de tâches",
         "description": "Cette api permet de créer des listes contenant des tâches et des labels.",
-        "label": "Projet école"
+        "label": "Gestion"
     },
     {
         "id": 2,
-        "title": "Projet 2",
-        "resum": "Résumé 2",
-        "description": "Ceci est la description du projet numéro 2",
-        "label": "Projet école"
+        "title": "Les bons comptes font les bons amis",
+        "resum": "Gestionnaire de dépenses",
+        "description": "Cette api permet de gérer les dépenses communes entre amis / famille, pour pouvoir répartir correctement l'argent d'un voyage par exemple.",
+        "label": "Gestion"
     },
     {
         "id": 3,
-        "title": "Projet 3",
-        "resum": "Résumé 3",
-        "description": "Ceci est la description du projet numéro 3",
-        "label": "Projet école"
+        "title": "L'actualité condensée",
+        "resum": "Avoir un regard sur l'actualité de notre monde.",
+        "description": "Ceci est un api qui permet d'avoir un condensé / résumé des actualités via les ressources fournies par une autre api. (NOM)",
+        "label": "Actu"
     }
 ]
