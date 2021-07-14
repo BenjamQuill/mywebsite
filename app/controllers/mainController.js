@@ -1,3 +1,5 @@
+const projects = require('../../data/data.json');
+
 module.exports = {
 
     homePage: (req, res, next) => {
@@ -5,7 +7,7 @@ module.exports = {
     },
 
     projectsPage: (req, res, next) => {
-        res.render('projects');
+        res.render('projects', {projects});
     },
 
     contactPage: (req, res, next) => {

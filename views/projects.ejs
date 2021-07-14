@@ -3,93 +3,35 @@
     <div class="container container-main">
         <div class="row">
 
-            <!-- 1er projet -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <a href="#">
-                        <img class="card-img-top" src="images/ex-okanban.JPG"
-                            alt="Projet numéro 1">
-                        <div class="badge-category badge badge-pill badge-projet1">
-                            Projet école
+            <% for (const project of projects) { %>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img class="card-img-top" src="images/ex-okanban.JPG"
+                                alt="Projet numéro 1">
+                            <div class="badge-category badge badge-pill badge-projet1">
+                                <%=project.label %>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">
+                                    <%=project.title %>
+                                </a>
+                            </h4>
+                            <h5>
+                                <%=project.resum %>
+                            </h5>
+                            <p class="card-text">
+                                <%=project.description %>
+                            </p>
                         </div>
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">
-                                Okanban
-                            </a>
-                        </h4>
-                        <h5>
-                            Gestionnaire de tâches
-                        </h5>
-                        <p class="card-text">
-                            Cette api permet de créer des listes contenant des tâches et des labels.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link-add-bookmarks">Visualiser le projet</a>
+                        <div class="card-footer">
+                            <a href="#" class="link-add-bookmarks">Visualiser le projet</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- 2nd projet -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <a href="#">
-                        <img class="card-img-top" src="images/ex-okanban.JPG"
-                            alt="Projet numéro 1">
-                        <div class="badge-category badge badge-pill badge-projet1">
-                            Projet école
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">
-                                2nd projet
-                            </a>
-                        </h4>
-                        <h5>
-                            Gestionnaire de tâches
-                        </h5>
-                        <p class="card-text">
-                            Cette api permet de créer des listes contenant des tâches et des labels.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link-add-bookmarks">Visualiser le projet</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3eme projet -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <a href="#">
-                        <img class="card-img-top" src="images/ex-okanban.JPG"
-                            alt="Projet numéro 1">
-                        <div class="badge-category badge badge-pill badge-projet1">
-                            Projet école
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">
-                                3eme projet
-                            </a>
-                        </h4>
-                        <h5>
-                            Gestionnaire de tâches
-                        </h5>
-                        <p class="card-text">
-                            Cette api permet de créer des listes contenant des tâches et des labels.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link-add-bookmarks">Visualiser le projet</a>
-                    </div>
-                </div>
-            </div>
-
+            <% } %> 
         </div>
     </div>
 
