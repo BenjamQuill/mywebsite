@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import LinkMe from './components/LinkMe'
+import Navbar from './components/Navbar'
+import Project from './components/Project'
+import Description from './components/Description'
 
 const links = [
   {
@@ -19,21 +22,18 @@ const links = [
   }
 ]
 
+import projects from '../../data/data.json'
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Benjamin DUJARRIER</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <main className="bg-gray-600 flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="#">
-            My website !
-          </a>
+          Benjamin DUJARRIER
         </h1>
+
+        {/* <Navbar /> */}
 
         <p className="mt-3 text-2xl">
           Get started by reading my description{' '}
@@ -45,11 +45,10 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           {
             links.map((link)=> {
-              console.log(link);
               return (
                 <LinkMe 
-                  slug={link.slug}
                   title={link.title}
+                  slug={link.slug}
                   description={link.description}
                 />
               )
@@ -57,6 +56,26 @@ export default function Home() {
             )
           }
         </div>
+
+        <Description />
+
+        <h1 className="text-2xl font-bold m-5">Projects</h1>
+        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
+          {
+            projects.map((project)=> {
+              return (
+                <Project 
+                  title={project.title}
+                  description={project.description}
+                  resum={project.resum}
+                  label={project.label}
+                />
+              )
+            }
+            )
+          }
+        </div>
+
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
