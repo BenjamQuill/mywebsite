@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Okanban",
         "resum": "Gestionnaire de tâches",
-        "description": "Cette api permet de créer des listes contenant des tâches et des labels.",
+        "description": "Cette api permet de créer des listes contenant des tâches et des labels. (Trellow cost)",
         "label": "Gestion"
     },
     {
