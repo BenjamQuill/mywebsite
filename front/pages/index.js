@@ -4,6 +4,10 @@ import Navbar from './components/Navbar'
 import Project from './components/Project'
 import Description from './components/Description'
 import Skills from './components/Skills'
+import projects from '../../data/data.json'
+import Contact from './components/Contact'
+import Image from 'next/image'
+import profilePic from '../public/images/photo_profil.jpeg'
 
 const links = [
   {
@@ -65,28 +69,32 @@ const skills = [
   }
 ]
 
-import projects from '../../data/data.json'
-import Contact from './components/Contact'
-
 export default function Home() {
+
   return (
     <div>
 
-      <main className="bg-gray-800 flex flex-col items-center justify-center w-full flex- px-20 text-center">
-        <h1 className="text-6xl text-green-800 font-bold">
+      <main className="bg-green-800 flex flex-col items-center justify-center w-full flex- px-20 text-center">
+        <h1 className="text-6xl text-black-800 font-bold">
           Benjamin DUJARRIER
         </h1>
 
         {/* <Navbar /> */}
 
-        <p className="mt-3 text-2xl text-white text-opacity-50">
+        <p className="m-3 text-3xl text-white text-opacity-50">
           Get started by reading my description{' '}
-          {/* <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
+          {/* <code className="p-3 font-mono text-lg bg-green-100 rounded-md">
             pages/index.js
           </code> */}
         </p>
+        <Image 
+          class="inline object-contain w-16 h-16 m-2 rounded-full" 
+          src={profilePic}
+          width={150}
+          height={150}
+          alt="Picture of the author" />
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
+        <div className="flex flex-wrap items-center justify-around max-w-8xl mt-6 sm:w-full">
           {
             links.map((link)=> {
               return (
@@ -103,8 +111,8 @@ export default function Home() {
 
         <Description />
 
-        <h1 className="text-2xl text-green-700 font-bold m-5">My projects</h1>
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-1 sm:w-full">
+        <h1 className="text-3xl text-black-700 font-bold mt-10">Projects</h1>
+        <div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full">
           {
             projects.map((project)=> {
               return (
@@ -120,7 +128,7 @@ export default function Home() {
           }
         </div>
 
-        <h1 className="text-2xl text-green-700 font-bold m-5">My skills</h1>
+        <h1 className="text-3xl text-black-700 font-bold mt-10">My skills</h1>
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-1 sm:w-full">
           {
             skills.map((skill)=> {
@@ -138,7 +146,7 @@ export default function Home() {
 
       </main>
 
-      <footer className="bg-gray-800 text-green-800 flex items-center justify-center w-full h-24 border-t">
+      <footer className="bg-green-800 text-green-800 flex items-center justify-center w-full h-24 border-t">
         <a
           className="flex items-center justify-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
