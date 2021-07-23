@@ -8,25 +8,26 @@ import projects from '../../data/data.json'
 import Contact from './components/Contact'
 import Image from 'next/image'
 import profilePic from '../public/images/photo_profil.jpeg'
+import Footer from './components/Footer'
 
 const links = [
   {
-    slug: "/me",
+    slug: "#description",
     title: "About me",
     description: "Find informations about me !"
   },
   {
-    slug: "/projects",
+    slug: "#projects",
     title: "Projects",
     description: "Find my projects !"
   },
   {
-    slug: "/skills",
+    slug: "#skills",
     title: "Skills",
     description: "Find my hard & soft skills"
   },
   {
-    slug: "/contact",
+    slug: "#contact",
     title: "Contact",
     description: "Contact me !"
   }
@@ -73,8 +74,7 @@ export default function Home() {
 
   return (
     <div>
-
-      <main className="bg-green-800 flex flex-col items-center justify-center w-full flex- px-20 text-center">
+      <main className="bg-opacity-25 bg-gradient-to-r from-green-600 to-green-900 flex flex-col items-center justify-center w-full flex- px-20 text-center">        
         <h1 className="text-6xl text-black-800 font-bold">
           Benjamin DUJARRIER
         </h1>
@@ -109,9 +109,10 @@ export default function Home() {
           }
         </div>
 
+
         <Description />
 
-        <h1 className="text-3xl text-black-700 font-bold mt-10">Projects</h1>
+        <h1 id="projects" className="text-3xl text-black-700 font-bold mt-10">Projects</h1>
         <div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full">
           {
             projects.map((project)=> {
@@ -121,6 +122,8 @@ export default function Home() {
                   description={project.description}
                   resum={project.resum}
                   label={project.label}
+                  statut={project.statut}
+                  slug={project.slug}
                 />
               )
             }
@@ -128,7 +131,7 @@ export default function Home() {
           }
         </div>
 
-        <h1 className="text-3xl text-black-700 font-bold mt-10">My skills</h1>
+        <h1 id="skills" class="text-3xl text-black-700 font-bold m-10">Mes compétences</h1>
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-1 sm:w-full">
           {
             skills.map((skill)=> {
@@ -145,18 +148,8 @@ export default function Home() {
         <Contact />
 
       </main>
-
-      <footer className="bg-green-800 text-green-800 flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+        
+      <Footer />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-export default function Project({title, description, resum, label}) {
+export default function Project({title, description, resum, label, statut, slug}) {
     return (
         <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
             <div class="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -18,7 +18,9 @@ export default function Project({title, description, resum, label}) {
                             <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
                                 <p>Want to see my code ?</p>
                                 <p>
-                                    <a href="#" class="hover:text-green-800"> My link GitHub &rarr; </a>
+                                    <a href="#" class="hover:text-green-800">
+                                        {statut === "ok" ? <a href={slug}>Lien GitHub</a> : 'In progress'}
+                                    </a>
                                 </p>
                             </div>
                         </div>

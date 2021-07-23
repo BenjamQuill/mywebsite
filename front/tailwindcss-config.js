@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'photo_profil': "url('/public/images/photo_profil.jpeg')",
+        'photo_couv': "url('/public/images/photo_couv.jpg')",
        })
 
     },
