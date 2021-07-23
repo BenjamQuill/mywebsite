@@ -4,20 +4,26 @@
         "title": "Okanban",
         "resum": "Gestionnaire de tâches",
         "description": "Cette api permet de créer des listes contenant des tâches et des labels. (Trellow cost)",
-        "label": "Gestion"
+        "label": "Gestion",
+        "statut": "ok",
+        "slug": "lien guthub"
     },
     {
         "id": 2,
         "title": "Les bons comptes font les bons amis",
         "resum": "Gestionnaire de dépenses",
         "description": "Cette api permet de gérer les dépenses communes entre amis / famille, pour pouvoir répartir correctement l'argent d'un voyage par exemple.",
-        "label": "Gestion"
+        "label": "Gestion",
+        "statut": "in progress",
+        "slug": "lien guthub"
     },
     {
         "id": 3,
         "title": "L'actualité condensée",
         "resum": "Avoir un regard sur l'actualité de notre monde.",
         "description": "Ceci est un api qui permet d'avoir un condensé / résumé des actualités via les ressources fournies par une autre api. (NOM)",
-        "label": "Actu"
+        "label": "Actu",
+        "statut": "in progress",
+        "slug": "lien guthub"
     }
 ]
