@@ -16,10 +16,10 @@ export default function Project({title, description, resum, label, statut, slug}
                                 <p>{description}</p>
                             </div>
                             <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-                                <p>Want to see my code ?</p>
+                                <p>Vous souhaitez voir ma façon de coder ?</p>
                                 <p>
                                     <a href="#" class="hover:text-green-800">
-                                        {statut === "ok" ? <a href={slug}>Lien GitHub</a> : 'In progress'}
+                                        {statut === "ok" ? <a href={slug}>Lien GitHub</a> : 'En cours de développement'}
                                     </a>
                                 </p>
                             </div>

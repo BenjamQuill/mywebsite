@@ -13,23 +13,23 @@ import Footer from './components/Footer'
 const links = [
   {
     slug: "#description",
-    title: "About me",
-    description: "Find informations about me !"
+    title: "Description",
+    description: "Quelques mots sur moi !"
   },
   {
     slug: "#projects",
-    title: "Projects",
-    description: "Find my projects !"
+    title: "Projets",
+    description: "Jetez un oeil sur mes projets !"
   },
   {
     slug: "#skills",
-    title: "Skills",
-    description: "Find my hard & soft skills"
+    title: "Mes compétences",
+    description: "Découvrer mes compétences !"
   },
   {
     slug: "#contact",
     title: "Contact",
-    description: "Contact me !"
+    description: "Contactez moi !"
   }
 ]
 
@@ -46,7 +46,7 @@ const skills = [
               what: ['HTML', 'CSS']
           },
           {
-              title: 'Other',
+              title: 'Autres',
               what: ['Javascript', 'Bootstrap', 'Tailwind']
           }
       ]
@@ -67,7 +67,20 @@ const skills = [
               what: ['Méthodes Agile & Scrum', 'Trello']
           }
       ]
-  }
+  },
+  {
+    title: 'Autres compétences',
+    skills: [
+        {
+            title: 'Humaines',
+            what: ['Esprit d\'équipe', 'Leader', 'Formateur', 'À l\'écoute']
+        },
+        {
+            title: 'Autres',
+            what: ['Autonome', 'Curieux', 'Impliqué']
+        }
+    ]
+}
 ]
 
 export default function Home() {
@@ -82,7 +95,7 @@ export default function Home() {
         {/* <Navbar /> */}
 
         <p className="m-3 text-3xl text-white text-opacity-50">
-          Get started by reading my description{' '}
+          Commencez par lire ma description pour découvrir brièvement mon parcours.{' '}
           {/* <code className="p-3 font-mono text-lg bg-green-100 rounded-md">
             pages/index.js
           </code> */}
@@ -112,7 +125,7 @@ export default function Home() {
 
         <Description />
 
-        <h1 id="projects" className="text-3xl text-black-700 font-bold mt-10">Projects</h1>
+        <h1 id="projects" className="text-3xl text-black-700 font-bold mt-10">Projets</h1>
         <div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full">
           {
             projects.map((project)=> {
