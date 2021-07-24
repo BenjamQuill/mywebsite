@@ -2,7 +2,7 @@ export default function Project({title, description, resum, label, statut, slug}
     return (
         <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
             <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-                <div class="absolute inset-0 bg-gradient-to-r from-green-100 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-green-600 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
                 <div class="relative px-4 py-10 bg-white bg-opacity-75 shadow-lg sm:rounded-3xl sm:p-20">
                     <div class="max-w-md mx-auto">
                         <div>
@@ -16,10 +16,10 @@ export default function Project({title, description, resum, label, statut, slug}
                                 <p>{description}</p>
                             </div>
                             <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-                                <p>Want to see my code ?</p>
+                                <p>Vous souhaitez voir ma façon de coder ?</p>
                                 <p>
                                     <a href="#" class="hover:text-green-800">
-                                        {statut === "ok" ? <a href={slug}>Lien GitHub</a> : 'In progress'}
+                                        {statut === "ok" ? <a href={slug}>Lien GitHub</a> : 'En cours de développement'}
                                     </a>
                                 </p>
                             </div>
