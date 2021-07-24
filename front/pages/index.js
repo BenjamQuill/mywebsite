@@ -145,7 +145,7 @@ export default function Home() {
         </div>
 
         <h1 id="skills" class="text-3xl text-black-700 font-bold m-10">Mes compétences</h1>
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-1 sm:w-full">
+        <div className="flex flex-wrap items-stretch justify-around max-w-1xl mt-1 sm:w-full">
           {
             skills.map((skill)=> {
               return (

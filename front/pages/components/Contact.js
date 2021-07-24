@@ -12,36 +12,23 @@ const sendMail = () => {
 
 export default function Contact() {
     return (
-        <form class="m-10 px-4 border rounded-lg m-5 w-1/2">
-            <h1 id="contact" className="text-3xl text-black-700 font-bold m-10 px-10">Contactez moi</h1>
-            <div class="md:flex md:items-center mb-6">
-                <div class="md:w-1/3">
-                    <label class="text-2xl block text-black-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
-                        Identité
-                        </label>
-                </div>
-                <div class="md:w-2/3">
-                    <input class="bg-black-200 appearance-none border-2 border-black-200 rounded w-full py-2 px-4 text-black-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Your fullname" />
-                </div>
+        <div className="m-10 px-4 m-5 w-1/2">
+            <div className="">
+                <div className="font-bold text-black-500 text-2xl m-2">
+                    Contactez moi
+                </div>   
             </div>
-            <div class="md:flex md:items-center mb-6">
-                <div class="md:w-1/3">
-                    <label class=" text-2xl block text-black-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-mail">
-                        @ mail
-                        </label>
-                </div>
-                <div class="md:w-2/3">
-                    <input class="bg-black-200 appearance-none border-2 border-black-200 rounded w-full py-2 px-4 text-black-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-mail" type="mail" placeholder="Your mail" />
-                </div>
+            <div className="flex flex-wrap justify-center md:flex md:items-center m-6 p-5 text-2xl text-justify border rounded-lg no-underline text-white text-opacity-75 md:rounded-lg md:no-underline">
+                <a href="https://twitter.com/ben_duj" class="px-4 sm:px-1">
+                    <img src="https://s1.qwant.com/thumbr/0x380/0/d/e3eb1692097408a0df29570383cf5149d0f584e46a151ee5083caccad20b8f/img_416151.png?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_416151.png&q=0&b=1&p=0&a=0" alt="Logo Twitter" class="max-w-full h-16 sm:h-8 align-middle border-none" />
+                </a>
+                <a href="https://www.linkedin.com/in/benjamin-dujarrier/" class="px-4 sm:px-1">
+                    <img src="https://s1.qwant.com/thumbr/0x380/8/7/fd6ca47fe71ece96b72c3055c4e7383574c3f433455b6007408f0f53da7522/img_39206.png?u=https%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_39206.png&q=0&b=1&p=0&a=0" alt="Logo LinkedIn" class="max-w-full h-16 sm:h-8 align-middle border-none" />
+                </a>
+                <a href="https://github.com/BenjamQuill" class="px-4 sm:p-1">
+                    <img src="https://s2.qwant.com/thumbr/0x380/f/6/dd401938cb2f64e34e6b9099e8e34b4250efaf0dfec0afd717c3d2fef90fd2/img_44605.png?u=https%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_44605.png&q=0&b=1&p=0&a=0" alt="Logo Github" class="max-w-full h-16 sm:h-8 align-middle border-none" />
+                </a>
             </div>
-            <div class="p-5 md:flex md:items-center">
-                <div class="md:w-1/3"></div>
-                <div class="md:w-1/3">
-                    <button class="shadow bg-green-600 hover:bg-green-400 focus:shadow-outline focus:outline-none text-black font-bold py-2 px-4 rounded" type="button" onClick={sendMail}>
-                        Envoyer !
-                    </button>
-                </div>
-            </div>
-        </form>
+        </div> 
     )
 }
