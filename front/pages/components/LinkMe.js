@@ -7,10 +7,10 @@ export default function LinkMe({slug, title, description}) {
       href={slug}
       >
         <a
-          className="p-6 mt-6 text-black-700 font-bold text-left border w-96 rounded-xl hover:text-green-600 focus:text-green-600"
+          className="w-full p-3 mt-3 text-black font-bold text-left border rounded-xl hover:text-green-600 focus:text-green-600 md:p-6 md:mt-6"
         >
-          <h3 className="text-3xl">{title} &rarr;</h3>
-          <p className="mt-4 text-xl text-white text-opacity-75">
+          <h3 className="text-xl md:text-2xl">&rarr; {title}</h3>
+          <p className="text-center mt-4 text-xs text-white text-opacity-75 md:text-xl">
             {description}
           </p>
         </a>

@@ -87,14 +87,14 @@ export default function Home() {
 
   return (
     <div>
-      <main className="bg-opacity-25 bg-gradient-to-r from-green-600 to-green-900 flex flex-col items-center justify-center w-full flex- px-20 text-center">        
-        <h1 className="text-6xl text-black-800 font-bold">
+      <main className="bg-opacity-25 bg-gradient-to-r from-green-600 to-green-900 flex flex-col items-center justify-center w-screen flex- px-20 text-center">        
+        <h1 className="text-4xl text-black font-bold md:text-6xl">
           Benjamin DUJARRIER
         </h1>
 
         {/* <Navbar /> */}
 
-        <p className="m-3 text-3xl text-white text-opacity-50">
+        <p className="m-3 text-xl text-white text-opacity-50 md:text-2xl">
           Commencez par lire ma description pour découvrir brièvement mon parcours.{' '}
           {/* <code className="p-3 font-mono text-lg bg-green-100 rounded-md">
             pages/index.js
@@ -107,7 +107,7 @@ export default function Home() {
           height={150}
           alt="Picture of the author" />
 
-        <div className="flex flex-wrap items-center justify-around max-w-8xl mt-6 sm:w-full">
+        <div className="flex flex-wrap items-center justify-around w-screen p-4">
           {
             links.map((link)=> {
               return (
@@ -125,8 +125,8 @@ export default function Home() {
 
         <Description />
 
-        <h1 id="projects" className="text-3xl text-black-700 font-bold mt-10">Projets</h1>
-        <div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full">
+        <h1 id="projects" className="text-xl text-black font-bold m-5 md:text-3xl">Projets</h1>
+        <div className="flex flex-wrap items-center justify-around max-w-4xl md:w-full">
           {
             projects.map((project)=> {
               return (
@@ -144,7 +144,7 @@ export default function Home() {
           }
         </div>
 
-        <h1 id="skills" class="text-3xl text-black-700 font-bold m-10">Mes compétences</h1>
+        <h1 id="skills" class="text-xl text-black font-bold m-5 md:text-3xl">Mes compétences</h1>
         <div className="flex flex-wrap items-stretch justify-around max-w-1xl mt-1 sm:w-full">
           {
             skills.map((skill)=> {
