@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Technologies et langages de programmation",
+        "skills": [
+            {
+                "title": "Back-end",
+                "what": ["NodeJS", "PostgreSQL", "Sqitch", "Javascript", "Express"]
+            },
+            {
+                "title": "Front-end",
+                "what": ["HTML", "CSS"]
+            },
+            {
+                "title": "Autres",
+                "what": ["Javascript", "Bootstrap", "Tailwind"]
+            }
+        ]
+    },
+    {
+        "title": "Outils, méthodologie et gestion de projet",
+        "skills": [
+            {
+                "title": "Environnement de développement",
+                "what": ["Git", "GitHub", "Linux", "Windows", "Visual Studio Code", "pgAdmin", "Insomnia"]
+            },
+            {
+                "title": "Déploiement",
+                "what": ["Heroku", "AWS"]
+            },
+            {
+                "title": "Gestion de projet",
+                "what": ["Méthodes Agile & Scrum", "Trello"]
+            }
+        ]
+    },
+    {
+      "title": "Autres compétences",
+      "skills": [
+          {
+              "title": "Humaines",
+              "what": ["Esprit d\"équipe", "Leader", "Formateur", "À l\"écoute"]
+          },
+          {
+              "title": "Autres",
+              "what": ["Autonome", "Curieux", "Impliqué"]
+          }
+      ]
+  }
+  ]

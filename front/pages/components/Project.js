@@ -1,9 +1,9 @@
 export default function Project({title, description, resum, label, statut, slug}) {
     return (
-        <div class="w-80 py-6 flex flex-col justify-center sm:py-12">
+        <div class="w-80 py-6 flex flex-col justify-center sm:py-12 md:w-1/2 md:m-2">
             <div class="relative py-3 sm:max-w-xl sm:mx-auto">
                 <div class="absolute inset-0 bg-gradient-to-r from-green-600 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-                <div class="relative px-3 py-5 bg-white bg-opacity-75 shadow-lg sm:rounded-3xl sm:p-20">
+                <div class="relative px-3 py-5 bg-white bg-opacity-75 shadow-lg sm:rounded-3xl sm:p-20 md:w-96">
                     <div class="max-w-md">
                         <div>
                             {/* <img src="/img/logo.svg" class="h-7 sm:h-8" /> */}

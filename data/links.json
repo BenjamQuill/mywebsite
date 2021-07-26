@@ -1,0 +1,22 @@
+[
+    {
+      "slug": "#description",
+      "title": "Description",
+      "description": "Quelques mots sur moi !"
+    },
+    {
+      "slug": "#projects",
+      "title": "Projets",
+      "description": "Jetez un oeil sur mes projets !"
+    },
+    {
+      "slug": "#skills",
+      "title": "Mes compétences",
+      "description": "Découvrer mes compétences !"
+    },
+    {
+      "slug": "#contact",
+      "title": "Contact",
+      "description": "Contactez moi !"
+    }
+  ]

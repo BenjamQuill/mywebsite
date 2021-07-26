@@ -1,6 +1,4 @@
-import Head from 'next/head'
 import LinkMe from './components/LinkMe'
-import Navbar from './components/Navbar'
 import Project from './components/Project'
 import Description from './components/Description'
 import Skills from './components/Skills'
@@ -9,79 +7,9 @@ import Contact from './components/Contact'
 import Image from 'next/image'
 import profilePic from '../public/images/photo_profil.jpeg'
 import Footer from './components/Footer'
+import skills from '../../data/skills.json'
+import links from '../../data/links.json'
 
-const links = [
-  {
-    slug: "#description",
-    title: "Description",
-    description: "Quelques mots sur moi !"
-  },
-  {
-    slug: "#projects",
-    title: "Projets",
-    description: "Jetez un oeil sur mes projets !"
-  },
-  {
-    slug: "#skills",
-    title: "Mes compétences",
-    description: "Découvrer mes compétences !"
-  },
-  {
-    slug: "#contact",
-    title: "Contact",
-    description: "Contactez moi !"
-  }
-]
-
-const skills = [
-  {
-      title: 'Technologies et langages de programmation',
-      skills: [
-          {
-              title: 'Back-end',
-              what: ['NodeJS', 'PostgreSQL', 'Sqitch', 'Javascript', 'Express']
-          },
-          {
-              title: 'Front-end',
-              what: ['HTML', 'CSS']
-          },
-          {
-              title: 'Autres',
-              what: ['Javascript', 'Bootstrap', 'Tailwind']
-          }
-      ]
-  },
-  {
-      title: 'Outils, méthodologie et gestion de projet',
-      skills: [
-          {
-              title: 'Environnement de développement',
-              what: ['Git', 'GitHub', 'Linux', 'Windows', 'Visual Studio Code', 'pgAdmin', 'Insomnia']
-          },
-          {
-              title: 'Déploiement',
-              what: ['Heroku', 'AWS']
-          },
-          {
-              title: 'Gestion de projet',
-              what: ['Méthodes Agile & Scrum', 'Trello']
-          }
-      ]
-  },
-  {
-    title: 'Autres compétences',
-    skills: [
-        {
-            title: 'Humaines',
-            what: ['Esprit d\'équipe', 'Leader', 'Formateur', 'À l\'écoute']
-        },
-        {
-            title: 'Autres',
-            what: ['Autonome', 'Curieux', 'Impliqué']
-        }
-    ]
-}
-]
 
 export default function Home() {
 
@@ -107,7 +35,7 @@ export default function Home() {
           height={150}
           alt="Picture of the author" />
 
-        <div className="flex flex-wrap items-center justify-around w-screen p-4">
+        <div className="flex flex-wrap items-center justify-around w-screen p-4 md:w-full">
           {
             links.map((link)=> {
               return (
