@@ -2,13 +2,13 @@ import LinkMe from './components/LinkMe'
 import Project from './components/Project'
 import Description from './components/Description'
 import Skills from './components/Skills'
-import projects from '../../data/data.json'
+import projects from '../data/data.json'
 import Contact from './components/Contact'
 import Image from 'next/image'
 import profilePic from '../public/images/photo_profil.jpeg'
 import Footer from './components/Footer'
-import skills from '../../data/skills.json'
-import links from '../../data/links.json'
+import skills from '../data/skills.json'
+import links from '../data/links.json'
 
 
 export default function Home() {
