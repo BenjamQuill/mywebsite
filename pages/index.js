@@ -29,7 +29,7 @@ export default function Home() {
           </code> */}
         </p>
         <Image 
-          class="inline object-contain w-16 h-16 m-2 rounded-full" 
+          className="inline object-contain w-16 h-16 m-2 rounded-full" 
           src={profilePic}
           width={150}
           height={150}
@@ -39,7 +39,7 @@ export default function Home() {
           {
             links.map((link)=> {
               return (
-                <LinkMe 
+                <LinkMe
                   title={link.title}
                   slug={link.slug}
                   description={link.description}
@@ -72,14 +72,15 @@ export default function Home() {
           }
         </div>
 
-        <h1 id="skills" class="text-xl text-black font-bold m-5 md:text-3xl">Mes compétences</h1>
+        <h1 id="skills" className="text-xl text-black font-bold m-5 md:text-3xl">Mes compétences</h1>
         <div className="flex flex-wrap items-stretch justify-around max-w-1xl mt-1 sm:w-full">
           {
             skills.map((skill)=> {
               return (
                 <Skills 
                   title={skill.title}
-                  skills={skill.skills}
+                  description={skill.description}
+                  key={skill.id}
                 />
               )
             }

@@ -1,7 +1,8 @@
 [
     {
+        "id": 1,
         "title": "Technologies et langages de programmation",
-        "skills": [
+        "description": [
             {
                 "title": "Back-end",
                 "what": ["NodeJS", "PostgreSQL", "Sqitch", "Javascript", "Express"]
@@ -17,8 +18,9 @@
         ]
     },
     {
+        "id": 2,
         "title": "Outils, méthodologie et gestion de projet",
-        "skills": [
+        "description": [
             {
                 "title": "Environnement de développement",
                 "what": ["Git", "GitHub", "Linux", "Windows", "Visual Studio Code", "pgAdmin", "Insomnia"]
@@ -34,8 +36,9 @@
         ]
     },
     {
+        "id": 3,
       "title": "Autres compétences",
-      "skills": [
+      "description": [
           {
               "title": "Humaines",
               "what": ["Esprit d\"équipe", "Leader", "Formateur", "À l\"écoute"]
