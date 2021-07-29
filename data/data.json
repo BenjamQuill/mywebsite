@@ -5,7 +5,8 @@
         "resum": "Gestionnaire de tâches",
         "description": "Cette api permet de créer des listes contenant des tâches et des labels. (Trellow cost)",
         "label": "Gestion",
-        "statut": "ok",
+        "statut": "in progress",
+        // "statut": "ok", if project ok
         "slug": "lien guthub"
     },
     {
