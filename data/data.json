@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Trellowsr",
+        "title": "Trellowst",
         "resum": "Gestionnaire de tâches",
         "description": "Cette api permet de créer des listes contenant des tâches et des labels. (Trello low cost)",
         "label": "Gestion",
