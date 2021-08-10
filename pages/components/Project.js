@@ -18,7 +18,7 @@ export default function Project({title, description, resum, label, statut, slug}
                             <div className="pt-6 text-xs leading-6 font-bold leading-7">
                                 <p>
                                     <a href="#" className="hover:text-green-800">
-                                        {statut === "ok" ? <a href={slug}>Lien GitHub</a> : 'En cours de développement'}
+                                        {slug =! "#" ? <a href={slug}>Lien Github</a> : <a href={slug}>En cours de développement (allez jeter un oeil quand même)</a>}
                                     </a>
                                 </p>
                             </div>

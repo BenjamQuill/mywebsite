@@ -63,7 +63,6 @@ export default function Home() {
                   description={project.description}
                   resum={project.resum}
                   label={project.label}
-                  statut={project.statut}
                   slug={project.slug}
                 />
               )

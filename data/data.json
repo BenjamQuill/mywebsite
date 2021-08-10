@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Okanban",
+        "title": "Trellowsr",
         "resum": "Gestionnaire de tâches",
-        "description": "Cette api permet de créer des listes contenant des tâches et des labels. (Trellow cost)",
+        "description": "Cette api permet de créer des listes contenant des tâches et des labels. (Trello low cost)",
         "label": "Gestion",
         "statut": "in progress",
-        "slug": "lien guthub"
+        "slug": "https://github.com/O-clock-Quill/oKanban-complet"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "description": "Cette api permet de gérer les dépenses communes entre amis / famille, pour pouvoir répartir correctement l'argent d'un voyage par exemple.",
         "label": "Gestion",
         "statut": "in progress",
-        "slug": "lien guthub"
+        "slug": "#"
     },
     {
         "id": 3,
@@ -24,6 +24,6 @@
         "description": "Ceci est un api qui permet d'avoir un condensé / résumé des actualités via les ressources fournies par une autre api. (NOM)",
         "label": "Actu",
         "statut": "in progress",
-        "slug": "lien guthub"
+        "slug": "#"
     }
 ]
