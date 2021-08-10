@@ -1,4 +1,4 @@
-export default function Project({title, description, resum, label, statut, slug}) {
+export default function Project({title, description, resum, label, slug}) {
     return (
         <div className="w-80 py-6 flex flex-col justify-center sm:py-12 md:w-1/2 md:m-2">
             <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -17,8 +17,8 @@ export default function Project({title, description, resum, label, statut, slug}
                             </div>
                             <div className="pt-6 text-xs leading-6 font-bold leading-7">
                                 <p>
-                                    <a href="#" className="hover:text-green-800">
-                                        {slug =! "#" ? <a href={slug}>Lien Github</a> : <a href={slug}>En cours de développement (allez jeter un oeil quand même)</a>}
+                                    <a href={slug} className="hover:text-green-800">
+                                        Lien Github
                                     </a>
                                 </p>
                             </div>
